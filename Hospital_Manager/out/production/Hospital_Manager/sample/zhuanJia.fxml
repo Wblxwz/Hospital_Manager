@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ZhuanJia">
+   <children>
+      <Label text="|专家列表">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="1.0" layoutY="41.0" prefHeight="558.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="79.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="114.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="58.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="56.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="380.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="444.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="444.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="444.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="专家名称" />
+            <Label text="出诊时间" GridPane.columnIndex="1" />
+            <Label text="总号" GridPane.columnIndex="2" />
+            <Label text="余号" GridPane.columnIndex="3" />
+            <Label text="简介" GridPane.columnIndex="4" />
+            <Label text="预约" GridPane.columnIndex="5" />
+            <Label text="张三" GridPane.rowIndex="1" />
+            <Label text="李四" GridPane.rowIndex="2" />
+            <Label fx:id="time1" text="Label1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="time2" text="Label2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="zh1" text="zh1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="yh1" text="yh1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="zh2" text="zh2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="yh2" text="yh2" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label text="擅长内科一" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label text="擅长内科二" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="zs" mnemonicParsing="false" onAction="#yuYueStage" text="点击预约" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="ls" mnemonicParsing="false" onAction="#yuYueStage" text="点击预约" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>

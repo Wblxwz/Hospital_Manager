@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BingYuan">
+   <children>
+      <Label text="病员注册">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="61.0" prefHeight="32.0" prefWidth="80.0" text="真实姓名：" />
+      <Label layoutX="35.0" layoutY="109.0" prefHeight="32.0" prefWidth="51.0" text="密码：" />
+      <Label layoutX="6.0" layoutY="154.0" prefHeight="32.0" prefWidth="80.0" text="身份证号：" />
+      <Label layoutX="29.0" layoutY="194.0" prefHeight="32.0" prefWidth="51.0" text="性别：" />
+      <Label layoutY="235.0" prefHeight="32.0" prefWidth="80.0" text="联系电话：" />
+      <Label layoutY="284.0" prefHeight="32.0" prefWidth="80.0" text="通信住址：" />
+      <Label layoutX="6.0" layoutY="421.0" prefHeight="32.0" prefWidth="80.0" text="病情情况：" />
+      <TextField layoutX="80.0" layoutY="66.0"  prefHeight="22.0" prefWidth="216.0" fx:id="xingming" />
+      <TextField fx:id="shenfenzhenghao" layoutX="80.0" layoutY="159.0"  prefHeight="22.0" prefWidth="216.0" />
+      <TextField fx:id="lianxidianhua" layoutX="80.0" layoutY="240.0"  prefHeight="22.0" prefWidth="216.0" />
+      <TextField fx:id="tongxinzhuzhi" layoutX="80.0" layoutY="289.0"  prefHeight="22.0" prefWidth="216.0" />
+      <Button layoutX="285.0" layoutY="556.0" mnemonicParsing="false" onAction="#tiJiao" prefHeight="30.0" prefWidth="74.0" text="提交" />
+      <Button layoutX="406.0" layoutY="556.0" mnemonicParsing="false" onAction="#chongZhi" prefHeight="30.0" prefWidth="74.0" text="重置" />
+      <RadioButton fx:id="nan" layoutX="82.0" layoutY="200.0" mnemonicParsing="false"  selected="true" text="男">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="nv" layoutX="173.0" layoutY="200.0" mnemonicParsing="false"  text="女" toggleGroup="$group" />
+      <PasswordField fx:id="mima" layoutX="80.0" layoutY="114.0"  prefHeight="22.0" prefWidth="216.0" />
+      <Label fx:id="ts1" layoutX="296.0" layoutY="67.0" text="*请您认真填写您的真实姓名" />
+      <Label fx:id="ts2" layoutX="296.0" layoutY="115.0" text="*请记好您的密码" />
+      <Label fx:id="ts3" layoutX="296.0" layoutY="160.0" text="*证件号码可以是身份证、军官证等有效证件，该号码将是挂号时的有效凭证" />
+      <TextArea fx:id="bingqingqingkuang" layoutX="82.0" layoutY="337.0"  prefHeight="200.0" prefWidth="502.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <Label fx:id="ts4" layoutX="296.0" layoutY="241.0" prefHeight="20.0" prefWidth="187.0" />
+      <Label fx:id="ts5" layoutX="296.0" layoutY="294.0" prefHeight="20.0" prefWidth="187.0" />
+      <Label fx:id="ts6" layoutX="584.0" layoutY="427.0" prefHeight="20.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

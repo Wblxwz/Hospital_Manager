@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.YuYue">
+   <children>
+      <GridPane layoutY="-1.0" prefHeight="125.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="专家名称" />
+            <Label text="出诊时间" GridPane.columnIndex="1" />
+            <Label text="总号" GridPane.columnIndex="2" />
+            <Label text="余号" GridPane.columnIndex="3" />
+            <Label fx:id="mc" text="mc" GridPane.rowIndex="1" />
+            <Label fx:id="sj" text="sj" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="zh" text="zh" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="yh" text="yh" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="5.0" layoutY="124.0" prefHeight="125.0" prefWidth="800.0">
+         <children>
+            <Label text="专家简介" />
+            <Label fx:id="jj" text="简介" GridPane.columnIndex="1" />
+            <Label text="状态" GridPane.rowIndex="1" />
+            <Label text="正常" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.0" minWidth="10.0" prefWidth="106.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="709.0" minWidth="10.0" prefWidth="694.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="198.0" layoutY="326.0" text="真实姓名：" />
+      <TextField fx:id="zsxm" layoutX="273.0" layoutY="321.0" prefHeight="30.0" prefWidth="297.0" />
+      <Label layoutX="228.0" layoutY="372.0" text="密码：" />
+      <Button layoutX="251.0" layoutY="556.0" mnemonicParsing="false" onAction="#guaHao" prefHeight="30.0" prefWidth="109.0" text="挂号" />
+      <Button layoutX="399.0" layoutY="556.0" mnemonicParsing="false" onAction="#zhuCe" prefHeight="30.0" prefWidth="109.0" text="注册" />
+      <PasswordField fx:id="mm" layoutX="273.0" layoutY="367.0" prefHeight="30.0" prefWidth="297.0" />
+      <TextField fx:id="sfzh" layoutX="273.0" layoutY="413.0" prefHeight="30.0" prefWidth="297.0" />
+      <Label layoutX="198.0" layoutY="418.0" text="身份证号：" />
+      <Label layoutX="198.0" layoutY="459.0" text="预约时间：" />
+      <ComboBox fx:id="xlk" layoutX="273.0" layoutY="454.0" prefHeight="30.0" prefWidth="297.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GuaHao">
+   <children>
+      <Label layoutY="10.0" text="请输入身份证号：" />
+      <TextField fx:id="sfzh" layoutX="124.0" layoutY="5.0" prefHeight="30.0" prefWidth="193.0" />
+      <Button layoutX="324.0" layoutY="5.0" mnemonicParsing="false" onAction="#chaXun" prefHeight="30.0" prefWidth="76.0" text="查询" />
+      <TableView fx:id="biao" layoutX="-1.0" layoutY="86.0" prefHeight="513.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn prefWidth="155.0" text="挂号人姓名" fx:id="xm" />
+          <TableColumn prefWidth="94.0" text="性别" fx:id="xb" />
+            <TableColumn fx:id="ys" prefWidth="197.0" text="医生姓名" />
+            <TableColumn fx:id="sj" prefWidth="406.0" text="挂号时间" />
+            <TableColumn fx:id="sh" minWidth="0.0" prefWidth="147.0" text="审核情况" />
+        </columns>
+      </TableView>
+      <PasswordField fx:id="mm" layoutX="542.0" layoutY="5.0" prefHeight="30.0" prefWidth="171.0" />
+      <Button layoutX="724.0" layoutY="5.0" mnemonicParsing="false" onAction="#shenHe" prefHeight="30.0" prefWidth="98.0" text="审核通过" />
+      <Label layoutX="414.0" layoutY="10.0" text="请输入审核密码：" />
+      <Button layoutX="534.0" layoutY="46.0" mnemonicParsing="false" onAction="#shanChu" prefHeight="30.0" prefWidth="76.0" text="删除" />
+      <Button layoutX="639.0" layoutY="46.0" mnemonicParsing="false" onAction="#qingChu" prefHeight="30.0" prefWidth="76.0" text="清空" />
+      <Button layoutX="829.0" layoutY="5.0" mnemonicParsing="false" onAction="#buTongGuo" prefHeight="30.0" prefWidth="98.0" text="审核不通过" />
+      <Button layoutX="294.0" layoutY="46.0" mnemonicParsing="false" onAction="#qingLing" prefHeight="30.0" prefWidth="98.0" text="挂号数清零" />
+      <Button layoutX="399.0" layoutY="46.0" mnemonicParsing="false" onAction="#sheMan" prefHeight="30.0" prefWidth="98.0" text="挂号数设满" />
+      <Label layoutY="51.0" text="请输入医生id：" />
+      <TextField fx:id="id" layoutX="112.0" layoutY="46.0" prefHeight="30.0" prefWidth="171.0" />
+   </children>
+</Pane>

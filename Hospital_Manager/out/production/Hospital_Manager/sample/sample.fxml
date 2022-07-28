@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="350.0" text="————   网上预约挂号系统      " textFill="RED">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="674.0" layoutY="143.0" mnemonicParsing="false" onAction="#guaHao" prefHeight="100.0" prefWidth="126.0" text="挂号查询与审核" />
+      <Button layoutX="449.0" layoutY="143.0" mnemonicParsing="false" onAction="#wangShang" prefHeight="100.0" prefWidth="126.0" text="网上挂号" />
+      <Button layoutX="224.0" layoutY="143.0" mnemonicParsing="false" onAction="#bingYuan" prefHeight="100.0" prefWidth="126.0" text="病员注册" />
+      <Button layoutX="0.0" layoutY="143.0" mnemonicParsing="false" onAction="#xuZhi" prefHeight="100.0" prefWidth="126.0" text="挂号须知" />
+   </children>
+</AnchorPane>
